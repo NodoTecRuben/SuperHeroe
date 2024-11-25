@@ -19,6 +19,6 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Example app listening on port ${PORT}`);
+    console.log(`Servidor levantado en el puerto: ${PORT}, desde el servidor`);
 });
 
