@@ -6,7 +6,10 @@ import superHeroRoutes from './routes/superHeroRoutes.mjs';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json);
+app.use(express.json());
+
+
+
 
 connectDB();
 app.use('/api', superHeroRoutes);
@@ -16,6 +19,6 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Servidor escuchando en el puerto ${PORT}`);
+    console.log(`Example app listening on port ${PORT}`);
 });
 
